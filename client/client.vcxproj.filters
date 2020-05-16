@@ -13,42 +13,147 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Исходные файлы\sdk">
-      <UniqueIdentifier>{7e56f37d-d07b-4e49-81ac-59f2ad239179}</UniqueIdentifier>
+    <Filter Include="Исходные файлы\game_sdk">
+      <UniqueIdentifier>{a72c6431-3ea1-4ef2-888b-4219dcaa3218}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\sdk">
-      <UniqueIdentifier>{5023c6d6-2d21-41a7-9a80-9db59e48bfd4}</UniqueIdentifier>
+    <Filter Include="Файлы заголовков\game_sdk">
+      <UniqueIdentifier>{4c6456d0-77f9-4b4a-8911-abdd348c6b6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\sdk\raknet">
-      <UniqueIdentifier>{d57bf282-4f14-4863-9f75-970aede84d28}</UniqueIdentifier>
+    <Filter Include="Файлы заголовков\game_sdk\cTypes">
+      <UniqueIdentifier>{ba1722c6-3101-495f-81fd-a544f4f69396}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\sdk\raknet">
-      <UniqueIdentifier>{b06d0426-a57f-4cb5-a297-389e9ed60ffe}</UniqueIdentifier>
+    <Filter Include="Исходные файлы\game_sdk\cTypes">
+      <UniqueIdentifier>{949d3736-daeb-4992-928f-6ed1e3092e3b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\raknet\cBitStream.cpp">
-      <Filter>Исходные файлы\sdk\raknet</Filter>
+    <ClCompile Include="BitStream.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\raknet\cPackages.cpp">
-      <Filter>Исходные файлы\sdk\raknet</Filter>
+    <ClCompile Include="RakClient.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="sdk\raknet\cRakNet.cpp">
-      <Filter>Исходные файлы\sdk\raknet</Filter>
+    <ClCompile Include="HookedRakClient.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="samp.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cCamera.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cEffects.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cEntity.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cGame.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cObject.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cPed.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cPhysical.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cPlaceable.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cVehicle.cpp">
+      <Filter>Исходные файлы\game_sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cTypes\cDetachable.cpp">
+      <Filter>Исходные файлы\game_sdk\cTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cTypes\cMatrix.cpp">
+      <Filter>Исходные файлы\game_sdk\cTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cTypes\cRect.cpp">
+      <Filter>Исходные файлы\game_sdk\cTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cTypes\cTypes.cpp">
+      <Filter>Исходные файлы\game_sdk\cTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cTypes\cVector2D.cpp">
+      <Filter>Исходные файлы\game_sdk\cTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cTypes\cVector3D.cpp">
+      <Filter>Исходные файлы\game_sdk\cTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="game_sdk\cTypes\eModelIndex.cpp">
+      <Filter>Исходные файлы\game_sdk\cTypes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sdk\raknet\cBitStream.hpp">
-      <Filter>Файлы заголовков\sdk\raknet</Filter>
+    <ClInclude Include="BitStream.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\raknet\cPackages.hpp">
-      <Filter>Файлы заголовков\sdk\raknet</Filter>
+    <ClInclude Include="RakClient.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\raknet\cRakNet.hpp">
-      <Filter>Файлы заголовков\sdk\raknet</Filter>
+    <ClInclude Include="main.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="HookedRakClient.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="samp.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cCamera.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cEffects.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cEntity.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cGame.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cObject.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cPed.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cPhysical.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cPlaceable.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cVehicle.hpp">
+      <Filter>Файлы заголовков\game_sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cTypes\cDetachable.hpp">
+      <Filter>Файлы заголовков\game_sdk\cTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cTypes\cMatrix.hpp">
+      <Filter>Файлы заголовков\game_sdk\cTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cTypes\cRect.hpp">
+      <Filter>Файлы заголовков\game_sdk\cTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cTypes\cTypes.hpp">
+      <Filter>Файлы заголовков\game_sdk\cTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cTypes\cVector2D.hpp">
+      <Filter>Файлы заголовков\game_sdk\cTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cTypes\cVector3D.hpp">
+      <Filter>Файлы заголовков\game_sdk\cTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="game_sdk\cTypes\eModelIndex.hpp">
+      <Filter>Файлы заголовков\game_sdk\cTypes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

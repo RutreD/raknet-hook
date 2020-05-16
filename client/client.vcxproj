@@ -31,7 +31,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <TargetName>assistant</TargetName>
+    <TargetName>raknet-hook</TargetName>
     <TargetExt>.asi</TargetExt>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include;</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(DXSDK_DIR)\Lib\x86;</LibraryPath>
@@ -62,15 +62,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BitStream.cpp" />
+    <ClCompile Include="game_sdk\cCamera.cpp" />
+    <ClCompile Include="game_sdk\cEffects.cpp" />
+    <ClCompile Include="game_sdk\cEntity.cpp" />
+    <ClCompile Include="game_sdk\cGame.cpp" />
+    <ClCompile Include="game_sdk\cObject.cpp" />
+    <ClCompile Include="game_sdk\cPed.cpp" />
+    <ClCompile Include="game_sdk\cPhysical.cpp" />
+    <ClCompile Include="game_sdk\cPlaceable.cpp" />
+    <ClCompile Include="game_sdk\cTypes\cDetachable.cpp" />
+    <ClCompile Include="game_sdk\cTypes\cMatrix.cpp" />
+    <ClCompile Include="game_sdk\cTypes\cRect.cpp" />
+    <ClCompile Include="game_sdk\cTypes\cTypes.cpp" />
+    <ClCompile Include="game_sdk\cTypes\cVector2D.cpp" />
+    <ClCompile Include="game_sdk\cTypes\cVector3D.cpp" />
+    <ClCompile Include="game_sdk\cTypes\eModelIndex.cpp" />
+    <ClCompile Include="game_sdk\cVehicle.cpp" />
+    <ClCompile Include="HookedRakClient.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="sdk\raknet\cBitStream.cpp" />
-    <ClCompile Include="sdk\raknet\cPackages.cpp" />
-    <ClCompile Include="sdk\raknet\cRakNet.cpp" />
+    <ClCompile Include="RakClient.cpp" />
+    <ClCompile Include="samp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sdk\raknet\cBitStream.hpp" />
-    <ClInclude Include="sdk\raknet\cPackages.hpp" />
-    <ClInclude Include="sdk\raknet\cRakNet.hpp" />
+    <ClInclude Include="BitStream.h" />
+    <ClInclude Include="game_sdk\cCamera.hpp" />
+    <ClInclude Include="game_sdk\cEffects.hpp" />
+    <ClInclude Include="game_sdk\cEntity.hpp" />
+    <ClInclude Include="game_sdk\cGame.hpp" />
+    <ClInclude Include="game_sdk\cObject.hpp" />
+    <ClInclude Include="game_sdk\cPed.hpp" />
+    <ClInclude Include="game_sdk\cPhysical.hpp" />
+    <ClInclude Include="game_sdk\cPlaceable.hpp" />
+    <ClInclude Include="game_sdk\cTypes\cDetachable.hpp" />
+    <ClInclude Include="game_sdk\cTypes\cMatrix.hpp" />
+    <ClInclude Include="game_sdk\cTypes\cRect.hpp" />
+    <ClInclude Include="game_sdk\cTypes\cTypes.hpp" />
+    <ClInclude Include="game_sdk\cTypes\cVector2D.hpp" />
+    <ClInclude Include="game_sdk\cTypes\cVector3D.hpp" />
+    <ClInclude Include="game_sdk\cTypes\eModelIndex.hpp" />
+    <ClInclude Include="game_sdk\cVehicle.hpp" />
+    <ClInclude Include="HookedRakClient.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="RakClient.h" />
+    <ClInclude Include="samp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

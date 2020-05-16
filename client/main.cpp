@@ -2,6 +2,9 @@
 #include <fstream>
 #include <string>
 
+
+cSAMP* SAMP = new cSAMP();
+
 void LOG(std::string text)
 {
     std::ofstream file("assistant.log");
@@ -24,6 +27,7 @@ void LOG(std::string text)
 
 bool OnReceivePacket(Packet* packet)
 {
+    SAMP->AddChatMessage(-1, (char*)"NEW MESSAGE");
     return true;
 }
 
@@ -37,11 +41,25 @@ bool OnSendRPC(int uniqueID, BitStream* parameters, PacketPriority priority, Pac
     return true;
 }
 
+void __cdecl MainThread(void*)
+{
+    while (true)
+    {
+        static bool init = false;
+        if (SAMP->IsInitialized() && !init)
+        {
+            init = true;
+            SAMP->AddChatMessage(-1, (char*)"LOADED");
+        }
+    }
+}
+
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  dwReason, LPVOID lpReserved)
 {
     switch (dwReason)
     {
         case DLL_PROCESS_ATTACH:
+            _beginthread(MainThread, NULL, nullptr);
         case DLL_THREAD_ATTACH:
         case DLL_THREAD_DETACH:
         case DLL_PROCESS_DETACH:

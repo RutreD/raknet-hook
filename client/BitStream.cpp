@@ -563,7 +563,6 @@ void BitStream::AddBitsAndReallocate( const int numberOfBitsToWrite )
 // Should hit if reads didn't match writes
 void BitStream::AssertStreamEmpty( void )
 {
-	assert( readOffset == numberOfBitsUsed );
 }
 
 // Exposes the data for you to look at, like PrintBits does.

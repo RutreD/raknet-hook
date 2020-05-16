@@ -614,7 +614,6 @@ inline void BitStream::WriteCompressed(bool var)
 template <>
 inline void BitStream::WriteCompressed(float var)
 {
-	assert(var > -1.01f && var < 1.01f);
 	if (var < -1.0f)
 		var=-1.0f;
 	if (var > 1.0f)
@@ -626,7 +625,6 @@ inline void BitStream::WriteCompressed(float var)
 template <>
 inline void BitStream::WriteCompressed(double var)
 {
-	assert(var > -1.01 && var < 1.01);
 	if (var < -1.0f)
 		var=-1.0f;
 	if (var > 1.0f)
