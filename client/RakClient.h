@@ -504,11 +504,6 @@ public:
 	RakClient(void *pRakClientInterface);
 	bool RPC(int rpcId, BitStream *bitStream, PacketPriority priority = HIGH_PRIORITY, PacketReliability reliability = RELIABLE_ORDERED, char orderingChannel = 0, bool shiftTimestamp = false);
 	bool Send(BitStream *bitStream, PacketPriority priority = HIGH_PRIORITY, PacketReliability reliability = UNRELIABLE_SEQUENCED, char orderingChannel = 0);
-	void SendDeath(uint16_t killerId, uint8_t reason);
-	void RequestClass(int classId);
-	void SendSCMEvent(int vehicleID, int eventId, int param1, int param2);
-	void SendSpawn(void);
-	void SendPickUp(int pickupId);
 	RakClientInterface *GetInterface(void) { return pRakClient; };
 
 private:
