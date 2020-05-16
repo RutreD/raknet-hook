@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk">
+      <UniqueIdentifier>{7e56f37d-d07b-4e49-81ac-59f2ad239179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\sdk">
+      <UniqueIdentifier>{5023c6d6-2d21-41a7-9a80-9db59e48bfd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk\raknet">
+      <UniqueIdentifier>{d57bf282-4f14-4863-9f75-970aede84d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\sdk\raknet">
+      <UniqueIdentifier>{b06d0426-a57f-4cb5-a297-389e9ed60ffe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\raknet\cBitStream.cpp">
+      <Filter>Исходные файлы\sdk\raknet</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\raknet\cPackages.cpp">
+      <Filter>Исходные файлы\sdk\raknet</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\raknet\cRakNet.cpp">
+      <Filter>Исходные файлы\sdk\raknet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk\raknet\cBitStream.hpp">
+      <Filter>Файлы заголовков\sdk\raknet</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\raknet\cPackages.hpp">
+      <Filter>Файлы заголовков\sdk\raknet</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\raknet\cRakNet.hpp">
+      <Filter>Файлы заголовков\sdk\raknet</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
