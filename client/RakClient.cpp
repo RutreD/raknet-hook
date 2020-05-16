@@ -21,10 +21,7 @@
 
 */
 
-#include <Windows.h>
-#include <stdint.h>
-#include "BitStream.h"
-#include "RakClient.h"
+#include "main.h"
 
 RakClient *g_RakClient = NULL;
 
