@@ -4,6 +4,7 @@
 #include "BitStream.h"
 #include "RakClient.h"
 #include "HookedRakClient.h"
+#include "samp.h"
 
 bool OnReceivePacket(Packet* packet);
 bool OnSendPacket(BitStream* parameters, PacketPriority priority, PacketReliability reliability, char orderingChannel);
