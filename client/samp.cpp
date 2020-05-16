@@ -2,38 +2,45 @@
 
 auto cSAMP::IsInitialized() -> bool {
 
-	g_dwSAMPAddr = reinterpret_cast<unsigned long>(LoadLibraryA("SAMP.DLL"));
+	g_dwSAMPAddr = reinterpret_cast<unsigned long>(LoadLibraryA("samp.dll"));
 
 	if (!g_dwSAMPAddr)
 		return false;
+	LOG("1");
 
 	g_SAMP = *reinterpret_cast<stSAMP**>(g_dwSAMPAddr + SAMP_INFO_OFFSET);
 
 	if (!g_SAMP)
 		return false;
+	LOG("2");
 
 	g_Chat = *reinterpret_cast<stChatInfo**>(g_dwSAMPAddr + SAMP_CHAT_INFO_OFFSET);
 
 	if (!g_Chat)
 		return false;
+	LOG("2");
 
 	g_Input = *reinterpret_cast<stInputInfo**>(g_dwSAMPAddr + SAMP_CHAT_INPUT_INFO_OFFSET);
 
 	if (!g_Input)
 		return false;
+	LOG("3");
 
 	g_Misc = *reinterpret_cast<stMiscInfo**>(g_dwSAMPAddr + SAMP_MISC_INFO);
 
 	if (!g_Misc)
 		return false;
+	LOG("4");
 
 	g_Scoreboard = *reinterpret_cast<stScoreboardInfo**>(g_dwSAMPAddr + SAMP_SCOREBOARD_INFO);
 
 	if (!g_Scoreboard)
 		return false;
+	LOG("5");
 
 	if (!g_SAMP->pRakClientInterface)
 		return false;
+	LOG("6");
 
 	g_RakClient = new RakClient(g_SAMP->pRakClientInterface);
 	g_SAMP->pRakClientInterface = new HookedRakClientInterface();

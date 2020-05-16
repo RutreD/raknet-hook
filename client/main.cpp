@@ -2,12 +2,11 @@
 #include <fstream>
 #include <string>
 
-
 cSAMP* SAMP = new cSAMP();
 
 void LOG(std::string text)
 {
-    std::ofstream file("assistant.log");
+    std::ofstream file("raknet-hook.log");
     file << text << std::endl;
     file.close();
 }
@@ -27,7 +26,7 @@ void LOG(std::string text)
 
 bool OnReceivePacket(Packet* packet)
 {
-    SAMP->AddChatMessage(-1, (char*)"NEW MESSAGE");
+    LOG("NEW PACKET");
     return true;
 }
 
@@ -49,7 +48,7 @@ void __cdecl MainThread(void*)
         if (SAMP->IsInitialized() && !init)
         {
             init = true;
-            SAMP->AddChatMessage(-1, (char*)"LOADED");
+            LOG("init");
         }
     }
 }
@@ -59,7 +58,9 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  dwReason, LPVOID lpReserved)
     switch (dwReason)
     {
         case DLL_PROCESS_ATTACH:
+            LOG("load");
             _beginthread(MainThread, NULL, nullptr);
+            break;
         case DLL_THREAD_ATTACH:
         case DLL_THREAD_DETACH:
         case DLL_PROCESS_DETACH:

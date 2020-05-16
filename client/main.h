@@ -7,6 +7,7 @@
 #include "HookedRakClient.h"
 #include "samp.h"
 
+void LOG(std::string text);
 bool OnReceivePacket(Packet* packet);
 bool OnSendPacket(BitStream* parameters, PacketPriority priority, PacketReliability reliability, char orderingChannel);
 bool OnSendRPC(int uniqueID, BitStream* parameters, PacketPriority priority, PacketReliability reliability, char orderingChannel, bool shiftTimestamp);
