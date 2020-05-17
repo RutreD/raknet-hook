@@ -1,7 +1,6 @@
 client/Release/
 server/Release/
 bin/
-setup/files_temporary/
 effects.cpp
 *.lck
 *.rsuser

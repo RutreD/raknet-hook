@@ -82,7 +82,6 @@
     <ClCompile Include="HookedRakClient.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RakClient.cpp" />
-    <ClCompile Include="samp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BitStream.h" />

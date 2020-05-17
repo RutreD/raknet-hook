@@ -39,9 +39,6 @@
     <ClCompile Include="HookedRakClient.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="samp.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="game_sdk\cCamera.cpp">
       <Filter>Исходные файлы\game_sdk</Filter>
     </ClCompile>
