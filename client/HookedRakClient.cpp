@@ -16,7 +16,9 @@ bool HookedRakClientInterface::Send(BitStream* bitStream, PacketPriority priorit
 	{
 		unsigned char c;
 		bitStream->ReadBits(&c, 8);
-		LOG(std::to_string(c));
+		char text[10];
+		sprintf(text, "%i ", c);
+		LOG(text);
 	}
 	LOG("\n");
 	return pSAMP->getRakClientInterface()->Send(bitStream, priority, reliability, orderingChannel);

@@ -1,6 +1,6 @@
 ﻿#include "main.h"
 
-SAMPFramework* pSAMP = new SAMPFramework(GetModuleHandleA("samp.dll"));
+SAMPFramework* pSAMP = new SAMPFramework();
 
 void LOG(std::string text)
 {
