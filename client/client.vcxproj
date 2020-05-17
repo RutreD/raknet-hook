@@ -63,44 +63,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BitStream.cpp" />
-    <ClCompile Include="game_sdk\cCamera.cpp" />
-    <ClCompile Include="game_sdk\cEffects.cpp" />
-    <ClCompile Include="game_sdk\cEntity.cpp" />
-    <ClCompile Include="game_sdk\cGame.cpp" />
-    <ClCompile Include="game_sdk\cObject.cpp" />
-    <ClCompile Include="game_sdk\cPed.cpp" />
-    <ClCompile Include="game_sdk\cPhysical.cpp" />
-    <ClCompile Include="game_sdk\cPlaceable.cpp" />
-    <ClCompile Include="game_sdk\cTypes\cDetachable.cpp" />
-    <ClCompile Include="game_sdk\cTypes\cMatrix.cpp" />
-    <ClCompile Include="game_sdk\cTypes\cRect.cpp" />
-    <ClCompile Include="game_sdk\cTypes\cTypes.cpp" />
-    <ClCompile Include="game_sdk\cTypes\cVector2D.cpp" />
-    <ClCompile Include="game_sdk\cTypes\cVector3D.cpp" />
-    <ClCompile Include="game_sdk\cTypes\eModelIndex.cpp" />
-    <ClCompile Include="game_sdk\cVehicle.cpp" />
     <ClCompile Include="HookedRakClient.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RakClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BitStream.h" />
-    <ClInclude Include="game_sdk\cCamera.hpp" />
-    <ClInclude Include="game_sdk\cEffects.hpp" />
-    <ClInclude Include="game_sdk\cEntity.hpp" />
-    <ClInclude Include="game_sdk\cGame.hpp" />
-    <ClInclude Include="game_sdk\cObject.hpp" />
-    <ClInclude Include="game_sdk\cPed.hpp" />
-    <ClInclude Include="game_sdk\cPhysical.hpp" />
-    <ClInclude Include="game_sdk\cPlaceable.hpp" />
-    <ClInclude Include="game_sdk\cTypes\cDetachable.hpp" />
-    <ClInclude Include="game_sdk\cTypes\cMatrix.hpp" />
-    <ClInclude Include="game_sdk\cTypes\cRect.hpp" />
-    <ClInclude Include="game_sdk\cTypes\cTypes.hpp" />
-    <ClInclude Include="game_sdk\cTypes\cVector2D.hpp" />
-    <ClInclude Include="game_sdk\cTypes\cVector3D.hpp" />
-    <ClInclude Include="game_sdk\cTypes\eModelIndex.hpp" />
-    <ClInclude Include="game_sdk\cVehicle.hpp" />
     <ClInclude Include="HookedRakClient.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="RakClient.h" />
